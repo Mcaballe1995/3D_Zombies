@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.6
   m_CustomReflection: {fileID: 8900000, guid: 3b5eaa969aa89fb45b025e2ff7d7695a, type: 3}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.000048145244, g: 0.0000015756814, b: 0.000000062212855, a: 0.6}
+  m_IndirectSpecularColor: {r: 0.00004814556, g: 0.0000015756797, b: 0.000000062212855, a: 0.6}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -749,7 +749,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 984345503258647799, guid: 69ac70b3620c8c64eae6ace0d947ec51, type: 3}
       propertyPath: m_Name
-      value: CanvasPaneles Variant
+      value: CanvasPaneles
       objectReference: {fileID: 0}
     - target: {fileID: 984345503293020349, guid: 69ac70b3620c8c64eae6ace0d947ec51, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
