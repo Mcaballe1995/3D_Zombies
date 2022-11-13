@@ -9,7 +9,7 @@ public class General : MonoBehaviour
     private static int maxNumBalas = 30;
     public static int hp_min = 1000;
     public static int hp_max;
-
+    public static int defeatedEnemies;
     //recarga balas
 
     private static int recargaBalas = 5;
@@ -17,7 +17,10 @@ public class General : MonoBehaviour
 
 
     // Start is called before the first frame update
-   
+    private void Start()
+    {
+        defeatedEnemies = 0;
+    }
 
     public static int Get_hpMin()
     {

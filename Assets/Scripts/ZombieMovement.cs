@@ -50,7 +50,7 @@ public class ZombieMovement : MonoBehaviour
     public void Zombie_Behaviour()
     {
         //if the distance between boss and player is < 15 
-        if (Vector3.Distance(transform.position, target.transform.position) < 10)
+        if (Vector3.Distance(transform.position, target.transform.position) < 200)
         {
             //zombie will rotate to the player position
             var lookPos = target.transform.position - transform.position;
@@ -143,6 +143,7 @@ public class ZombieMovement : MonoBehaviour
         if (health <= 0)
         {
             OnEnemyKilled?.Invoke(this);
+            General.defeatedEnemies += 1;
         }
     }
 
