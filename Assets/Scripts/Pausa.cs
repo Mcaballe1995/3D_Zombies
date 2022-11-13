@@ -71,6 +71,11 @@ public class Pausa : MonoBehaviour
         SceneManager.LoadScene("Nivel2");
     }
 
+    public void Reintentar1()
+    {
+        SceneManager.LoadScene("Nivel1");
+    }
+
 
     public void SalirJuego()
     {
