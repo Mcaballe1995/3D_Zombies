@@ -310,7 +310,7 @@ using UnityEngine.UI;
                     death = true;
                     musica.enabled = false;
                     teleport.SetActive(true);
-                    Invoke("carregarCredits", 3.0f);
+                    Invoke("carregarCredits", 4.5f);
                     
                 }
                 

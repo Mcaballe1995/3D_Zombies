@@ -61,12 +61,16 @@ public class Pausa : MonoBehaviour
         }
     }
 
-    public void Reintentar()
+    public void Reintentar3()
     {
         SceneManager.LoadScene("Nivel3");
     }
 
-    
+    public void Reintentar2()
+    {
+        SceneManager.LoadScene("Nivel2");
+    }
+
 
     public void SalirJuego()
     {

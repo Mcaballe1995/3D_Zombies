@@ -123,6 +123,7 @@ public class PlayerMovementScript : MonoBehaviour
 
 		if (General.Get_hpMin() <= 0)
 		{
+
 			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 		}
 		//Ataque();
@@ -358,6 +359,15 @@ public class PlayerMovementScript : MonoBehaviour
 				if (_other.transform.tag == "Boss")
 				{
 					print("hit a Boss");
+				}
+				InstantiateBlood(hitInfo, false);
+			}
+			if (hitInfo.transform.tag == "Zombie")
+			{
+				Transform _other = hitInfo.transform.root.transform;
+				if (_other.transform.tag == "Zombie")
+				{
+					print("hit a Zombie");
 				}
 				InstantiateBlood(hitInfo, false);
 			}

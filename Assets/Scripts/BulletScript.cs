@@ -16,6 +16,7 @@ using System.Collections.Generic;
 	public float floatInfrontOfWall;
 	[Tooltip("Blood prefab particle this bullet will create upoon hitting enemy")]
 	public GameObject bloodEffect;
+	public GameObject bloodEffect2;
 	[Tooltip("Put Weapon layer and Player layer to ignore bullet raycast.")]
 	public LayerMask ignoreLayer;
 
@@ -39,7 +40,7 @@ using System.Collections.Generic;
 				}
 				if (hit.transform.tag == "Zombie")
 				{
-					Instantiate(bloodEffect, hit.point, Quaternion.LookRotation(hit.normal));
+					Instantiate(bloodEffect2, hit.point, Quaternion.LookRotation(hit.normal));
 					Destroy(gameObject);
 				}
 			}		
