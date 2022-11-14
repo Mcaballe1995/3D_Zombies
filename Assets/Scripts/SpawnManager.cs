@@ -40,10 +40,16 @@ public class SpawnManager : MonoBehaviour
     {
         if (wave == 3)
         {
-            
+            //SumadorVariables.CanviColor();
             yield return new WaitForSeconds(2);
             SceneManager.LoadScene("FinalIglesia");
         }
+        else
+        {
+            General.oleadasZombies += 1;
+        }
+
+
         yield return new WaitForSeconds(4);
         for (int i = 0; i < waveC; i++)
         {
@@ -51,7 +57,7 @@ public class SpawnManager : MonoBehaviour
             yield return new WaitForSeconds(2);
         }
         wave += 1;
-        General.oleadasZombies += 1;
+        //General.oleadasZombies += 1;
         waveCount += 2;
         spawning = false;
         yield break;

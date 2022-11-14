@@ -6,7 +6,8 @@ using UnityEngine.UI;
 public class SumadorVariables : MonoBehaviour
 {
 
-    public static Text textElement;
+    public Text textElement;
+
 
 
 
@@ -14,5 +15,11 @@ public class SumadorVariables : MonoBehaviour
     void Update()
     {
         textElement.text = "Zombies muertos:  "+General.zombiesMuertos.ToString()+ " / 12";
+        textElement.color = Color.red;
     }
+
+    /*public static void CanviColor()
+    {
+        textElement.color = Color.green;
+    }*/
 }
