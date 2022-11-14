@@ -20,6 +20,7 @@ public class ZombieMovement : MonoBehaviour
     public GameObject[] hit;
     public int hit_select;
     public bool estoyMuerto = false;
+
     
     public bool direction_skill;
 
