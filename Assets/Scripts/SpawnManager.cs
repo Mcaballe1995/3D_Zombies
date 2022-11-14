@@ -19,6 +19,7 @@ public class SpawnManager : MonoBehaviour
     {
         waveCount = 2 ; //cantidade e enemigos que aumenta cada oleada
         wave = 0;
+        General.oleadasZombies = 0;
         spawning = false;
         enemiesSpawned = 0;
         gameManager = GameObject.Find("GameManager").GetComponent<General>();
@@ -48,6 +49,7 @@ public class SpawnManager : MonoBehaviour
             yield return new WaitForSeconds(2);
         }
         wave += 1;
+        General.oleadasZombies += 1;
         waveCount += 2;
         spawning = false;
         yield break;

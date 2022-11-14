@@ -23,6 +23,8 @@ public class ZombieMovement : MonoBehaviour
     
     public bool direction_skill;
 
+    //public Text textZombie;
+
     internal List<ZombieMovement> ToList()
     {
         throw new System.NotImplementedException();
@@ -38,7 +40,7 @@ public class ZombieMovement : MonoBehaviour
 
     private void Awake()
     {
-
+        
     }
 
     void Start()
@@ -148,6 +150,13 @@ public class ZombieMovement : MonoBehaviour
                 estoyMuerto = true;
                 OnEnemyKilled?.Invoke(this);
                 General.zombiesMuertos += 1;
+                /*if (textZombie.CompareTag("numMuertos"))
+                    
+                {
+                    Debug.Log("gfsdgsdfgsd");
+                    textZombie.GetComponent<Text>().text = General.zombiesMuertos.ToString();
+                }*/
+                
                 //this.GetComponent<ZombieMovement>().enabled = false;
                 Destroy(this.gameObject, 1.0f);
             }

@@ -15,8 +15,16 @@ public class General : MonoBehaviour
     private static int recargaBalas = 5;
     private static int recargaVida = 2;
     public static int zombiesMuertos = 0;
+    public static int oleadasZombies = 0;
 
+    private GameObject numZombiesText;
+    private GameObject numOleadasText;
 
+    private void Awake()
+    {
+        numZombiesText = (GameObject)GameObject.FindGameObjectWithTag("numMuertos");
+        numOleadasText = (GameObject)GameObject.FindGameObjectWithTag("numOleadas");
+    }
     // Start is called before the first frame update
     private void Start()
     {
