@@ -19,6 +19,7 @@ public class SpawnManager : MonoBehaviour
     {
         waveCount = 2 ; //cantidade e enemigos que aumenta cada oleada
         wave = 0;
+        General.zombiesMuertos = 0;
         General.oleadasZombies = 0;
         spawning = false;
         enemiesSpawned = 0;

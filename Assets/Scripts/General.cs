@@ -54,7 +54,7 @@ public class General : MonoBehaviour
 
     public static void Set_hpMax(int hpmax)
     {
-        Debug.Log("vida");
+        //Debug.Log("vida");
         hp_max = hpmax;
     }
 

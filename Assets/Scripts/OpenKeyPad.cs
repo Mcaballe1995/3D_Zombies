@@ -31,11 +31,11 @@ public class OpenKeyPad : MonoBehaviour
         }
     }
     // Update is called once per frame
-    void Update()
+    /*void Update()
     {
-        if(Input.GetButtonDown("Interact") && inReach)
+        if(Input.GetButtonDown("") && inReach)
         {
             keypadOB.SetActive(true);
         }
-    }
+    }*/
 }
