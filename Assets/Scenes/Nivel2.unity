@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.6
   m_CustomReflection: {fileID: 8900000, guid: 3b5eaa969aa89fb45b025e2ff7d7695a, type: 3}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.00004814556, g: 0.0000015756797, b: 0.000000062212855, a: 0.6}
+  m_IndirectSpecularColor: {r: 0.000048145244, g: 0.0000015756814, b: 0.000000062212855, a: 0.6}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6693,6 +6693,26 @@ PrefabInstance:
     - target: {fileID: 1303016428793052535, guid: 4342e54cdbce1104d8a0d47e2562cde5, type: 3}
       propertyPath: m_Name
       value: Esglesia
+      objectReference: {fileID: 0}
+    - target: {fileID: 1627691963407423085, guid: 4342e54cdbce1104d8a0d47e2562cde5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5495883
+      objectReference: {fileID: 0}
+    - target: {fileID: 1627691963407423085, guid: 4342e54cdbce1104d8a0d47e2562cde5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.000000012011634
+      objectReference: {fileID: 0}
+    - target: {fileID: 1627691963407423085, guid: 4342e54cdbce1104d8a0d47e2562cde5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.8354356
+      objectReference: {fileID: 0}
+    - target: {fileID: 1627691963407423085, guid: 4342e54cdbce1104d8a0d47e2562cde5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.000000018259026
+      objectReference: {fileID: 0}
+    - target: {fileID: 1627691963407423085, guid: 4342e54cdbce1104d8a0d47e2562cde5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -113.322
       objectReference: {fileID: 0}
     - target: {fileID: 1627691964337199274, guid: 4342e54cdbce1104d8a0d47e2562cde5, type: 3}
       propertyPath: m_Name
