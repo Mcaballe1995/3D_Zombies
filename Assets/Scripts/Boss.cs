@@ -330,6 +330,8 @@ using UnityEngine.UI;
              hpMin -= 10;
             Destroy(other.gameObject);
              }
+
+        //Gradas
         
     }
 }

@@ -33,6 +33,6 @@ public class EnemigosRestantes : MonoBehaviour
     }
     void UpdateZombiesRestantesText()
     {
-        enemiesRestantesTexto.text = $"Enemigos restantes:  {zombies.Count}";
+        enemiesRestantesTexto.text = $"Enemigos restantes:  {General.zombiesMuertos}";
     }
 }

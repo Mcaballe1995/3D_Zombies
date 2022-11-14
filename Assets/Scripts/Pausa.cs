@@ -29,6 +29,7 @@ public class Pausa : MonoBehaviour
     public void Reanudar()
     {
         //panelPausa.SetActive(false);
+        Debug.Log("Reanudando");
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
         panelPausa.SetActive(false);

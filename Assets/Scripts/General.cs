@@ -14,6 +14,7 @@ public class General : MonoBehaviour
 
     private static int recargaBalas = 5;
     private static int recargaVida = 2;
+    public static int zombiesMuertos = 0;
 
 
     // Start is called before the first frame update

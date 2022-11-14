@@ -18,13 +18,17 @@ public class RankZombie : MonoBehaviour
                 case 0:
                     //hit1
                     ani.SetFloat("skills", 0);
-                    zombie.hit_select = 0;
+                    if (zombie) { 
+                        zombie.hit_select = 0;
+                    }
                     break;
 
                 case 1:
                     //hit2
                     ani.SetFloat("skills", 0.2f);
-                    zombie.hit_select = 1;
+                    if(zombie) {
+                        zombie.hit_select = 1;
+                    }
                     break;
 
             }

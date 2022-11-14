@@ -13,6 +13,7 @@ public class SpawnManager : MonoBehaviour
     private int enemiesSpawned;
     private int enemyType;
     private General gameManager;
+    public int muertos;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,19 +27,20 @@ public class SpawnManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(spawning == false && enemiesSpawned == General.defeatedEnemies)
+        if (spawning == false && enemiesSpawned == General.zombiesMuertos)
         {
+            spawning = true;
             StartCoroutine(SpawnWave(waveCount));
         }
-        if( wave == 3)
-        {
-                SceneManager.LoadScene("FinalIglesia"); 
-        }
+        muertos = General.zombiesMuertos;
     }
 
     IEnumerator SpawnWave(int waveC)
     {
-        spawning = true;
+        if (wave == 3)
+        {
+            SceneManager.LoadScene("FinalIglesia");
+        }
         yield return new WaitForSeconds(4);
         for (int i = 0; i < waveC; i++)
         {

@@ -19,6 +19,7 @@ public class ZombieMovement : MonoBehaviour
     public float speed;
     public GameObject[] hit;
     public int hit_select;
+    public bool estoyMuerto = false;
     
     public bool direction_skill;
 
@@ -139,11 +140,17 @@ public class ZombieMovement : MonoBehaviour
 
     public void TakeDamage(float damageAmount)
     {
-        health -= damageAmount;
-        if (health <= 0)
+        if (!estoyMuerto)
         {
-            OnEnemyKilled?.Invoke(this);
-            General.defeatedEnemies += 1;
+            health -= damageAmount;
+            if (health <= 0)
+            {
+                estoyMuerto = true;
+                OnEnemyKilled?.Invoke(this);
+                General.zombiesMuertos += 1;
+                //this.GetComponent<ZombieMovement>().enabled = false;
+                Destroy(this.gameObject, 1.0f);
+            }
         }
     }
 
