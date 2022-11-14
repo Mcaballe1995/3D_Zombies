@@ -6,14 +6,13 @@ using UnityEngine.UI;
 public class SumadorVariables : MonoBehaviour
 {
 
-    public string textValue;
-    public Text textElement;
+    public static Text textElement;
 
 
 
     // Update is called once per frame
     void Update()
     {
-        
+        textElement.text = "Zombies muertos:  "+General.zombiesMuertos.ToString()+ " / 12";
     }
 }

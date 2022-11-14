@@ -40,6 +40,8 @@ public class SpawnManager : MonoBehaviour
     {
         if (wave == 3)
         {
+            
+            yield return new WaitForSeconds(2);
             SceneManager.LoadScene("FinalIglesia");
         }
         yield return new WaitForSeconds(4);
